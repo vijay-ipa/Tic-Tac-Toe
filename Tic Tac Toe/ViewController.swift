@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var activeGame = true
     
     // 1 is Cross and 2 is Nought
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-    
+        
         let activePosition = sender.tag - 1
         
         if gameState[activePosition] == 0 && activeGame
@@ -44,17 +44,19 @@ class ViewController: UIViewController {
                     
                     if gameState[combination[0]] == 1
                     {
+                        let alert1 = UIAlertController(title: "Kudos......!", message: "Player X has Won", preferredStyle: .alert)
                         alert1.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                         present(alert1, animated: true)
                         
                     }
                     else
                     {
+                        let alert2 = UIAlertController(title: "Kudos......!", message: "Player O has Won", preferredStyle: .alert)
                         alert2.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                         present(alert2, animated: true)
-
+                        
                     }
-                
+                    
                     playAgainButton.isHidden = false
                     
                 }
@@ -63,16 +65,17 @@ class ViewController: UIViewController {
             
         }
         activeGame = false
-       for i in gameState
-       {
-        if i == 0
+        for i in gameState
         {
-            activeGame = true
-            break
-        }
+            if i == 0
+            {
+                activeGame = true
+                break
+            }
         }
         if activeGame == false
         {
+            let alert3 = UIAlertController(title: "It's a Draw", message: "There is no Winner", preferredStyle: .alert)
             alert3.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alert3, animated: true)
             playAgainButton.isHidden = false
@@ -80,7 +83,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var playAgainButton: UIButton!
-    @IBAction func playAgain(_ sender: UIButton)
+    @IBAction func playAgain(_ sender: AnyObject)
     {
         gameState = [0,0,0,0,0,0,0,0,0]
         activeGame = true
@@ -91,6 +94,7 @@ class ViewController: UIViewController {
         {
             let button = view.viewWithTag(i) as! UIButton
             button.setImage(nil, for: UIControl.State())
+
         }
 
     }
