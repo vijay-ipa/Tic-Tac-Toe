@@ -30,7 +30,9 @@
                                     <constraint firstAttribute="height" constant="90" id="4ce-Ay-PzG"/>
                                     <constraint firstAttribute="width" constant="90" id="8nm-RV-dzz"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLV-EU-48o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-Vu-okK">
                                 <rect key="frame" x="142.5" y="408" width="90" height="90"/>
@@ -38,7 +40,9 @@
                                     <constraint firstAttribute="width" constant="90" id="UC6-U2-ORo"/>
                                     <constraint firstAttribute="height" constant="90" id="YKO-33-AdP"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wv0-Uy-MUK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-4V-ejF">
                                 <rect key="frame" x="28" y="408" width="90" height="90"/>
@@ -46,7 +50,9 @@
                                     <constraint firstAttribute="height" constant="90" id="Yc2-81-azV"/>
                                     <constraint firstAttribute="width" constant="90" id="qiT-5L-ego"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFv-S1-8Bk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5I-9V-eCD">
                                 <rect key="frame" x="260" y="288.5" width="90" height="90"/>
@@ -54,7 +60,9 @@
                                     <constraint firstAttribute="width" constant="90" id="NN8-Ov-z3M"/>
                                     <constraint firstAttribute="height" constant="90" id="dj7-Ef-ikh"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cht-gF-hkY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gi-tE-aJW">
                                 <rect key="frame" x="28" y="288.5" width="90" height="90"/>
@@ -62,7 +70,9 @@
                                     <constraint firstAttribute="height" constant="90" id="Gdw-Rb-8sV"/>
                                     <constraint firstAttribute="width" constant="90" id="euA-qR-8fT"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkf-Zg-8Zw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdC-PQ-hlt">
                                 <rect key="frame" x="260" y="176" width="90" height="90"/>
@@ -70,7 +80,9 @@
                                     <constraint firstAttribute="width" constant="90" id="psW-8I-lGY"/>
                                     <constraint firstAttribute="height" constant="90" id="zRK-HD-pDM"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WV0-au-nIJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-Kh-t5K">
                                 <rect key="frame" x="142.5" y="176" width="90" height="90"/>
@@ -78,7 +90,9 @@
                                     <constraint firstAttribute="width" constant="90" id="A4b-vI-UJh"/>
                                     <constraint firstAttribute="height" constant="90" id="TJ7-GG-BPw"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rG-mT-1Se"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBW-ui-NOc">
                                 <rect key="frame" x="28" y="176" width="90" height="90"/>
@@ -86,7 +100,6 @@
                                     <constraint firstAttribute="height" constant="90" id="7Pi-xF-FOe"/>
                                     <constraint firstAttribute="width" constant="90" id="hqQ-V8-fnq"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSs-Rl-hLI"/>
                                 </connections>
@@ -97,7 +110,9 @@
                                     <constraint firstAttribute="width" constant="90" id="Uss-Md-SjN"/>
                                     <constraint firstAttribute="height" constant="90" id="e3Z-Vw-uko"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qE8-6o-dRe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -133,6 +148,5 @@
     </scenes>
     <resources>
         <image name="Board.png" width="1023" height="1027"/>
-        <image name="Cross-01.png" width="500" height="500"/>
     </resources>
 </document>
