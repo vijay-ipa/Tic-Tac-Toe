@@ -12,6 +12,8 @@ import UIKit
 
 let alert1 = UIAlertController(title: "Kudos......!", message: "Player X has Won", preferredStyle: .alert)
 let alert2 = UIAlertController(title: "Kudos......!", message: "Player O has Won", preferredStyle: .alert)
+let alert3 = UIAlertController(title: "It's a Draw", message: "There is no Winner", preferredStyle: .alert)
+
 
 
 

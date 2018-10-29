@@ -44,19 +44,58 @@ class ViewController: UIViewController {
                     
                     if gameState[combination[0]] == 1
                     {
-                        alert1.addAction(UIAlertAction(title: "Restart", style: .default, handler: nil))
+                        alert1.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                         present(alert1, animated: true)
+                        
+                    }
+                    else
+                    {
+                        alert2.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        present(alert2, animated: true)
+
                     }
                 
+                    playAgainButton.isHidden = false
+                    
                 }
                 
             }
             
         }
-        
-       
-        
+        activeGame = false
+       for i in gameState
+       {
+        if i == 0
+        {
+            activeGame = true
+            break
+        }
+        }
+        if activeGame == false
+        {
+            alert3.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alert3, animated: true)
+            playAgainButton.isHidden = false
+        }
     }
+    
+    @IBOutlet weak var playAgainButton: UIButton!
+    @IBAction func playAgain(_ sender: UIButton)
+    {
+        gameState = [0,0,0,0,0,0,0,0,0]
+        activeGame = true
+        activeplayer = 1
+        playAgainButton.isHidden = true
+        
+        for i in 1...9
+        {
+            let button = view.viewWithTag(i) as! UIButton
+            button.setImage(nil, for: UIControl.State())
+        }
+
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
