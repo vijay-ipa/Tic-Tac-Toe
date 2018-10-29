@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var activeGame = true
+    
     // 1 is Cross and 2 is Nought
     var activeplayer = 1
     
@@ -18,7 +20,7 @@ class ViewController: UIViewController {
     
         let activePosition = sender.tag - 1
         
-        if gameState[activePosition] == 0
+        if gameState[activePosition] == 0 && activeGame
         {
             gameState[activePosition] = activeplayer
             
@@ -38,7 +40,14 @@ class ViewController: UIViewController {
                 
                 if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]
                 {
+                    activeGame = false
                     
+                    if gameState[combination[0]] == 1
+                    {
+                        alert1.addAction(UIAlertAction(title: "Restart", style: .default, handler: nil))
+                        present(alert1, animated: true)
+                    }
+                
                 }
                 
             }

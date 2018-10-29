@@ -17,6 +17,7 @@
 		E7997A692186B67700EA14E7 /* Cross-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E7997A672186B67700EA14E7 /* Cross-01.png */; };
 		E7997A6A2186B67700EA14E7 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = E7997A682186B67700EA14E7 /* Nought.png */; };
 		E7997A6E2186C07500EA14E7 /* GameState+Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7997A6D2186C07500EA14E7 /* GameState+Combinations.swift */; };
+		E7997A702186C2AE00EA14E7 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7997A6F2186C2AD00EA14E7 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E7997A672186B67700EA14E7 /* Cross-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cross-01.png"; sourceTree = "<group>"; };
 		E7997A682186B67700EA14E7 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
 		E7997A6D2186C07500EA14E7 /* GameState+Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameState+Combinations.swift"; sourceTree = "<group>"; };
+		E7997A6F2186C2AD00EA14E7 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				E7997A542186959C00EA14E7 /* Info.plist */,
 				E7997A6021869F0F00EA14E7 /* UIView+Extension.swift */,
 				E7997A6D2186C07500EA14E7 /* GameState+Combinations.swift */,
+				E7997A6F2186C2AD00EA14E7 /* Alerts.swift */,
 			);
 			path = "Tic Tac Toe";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7997A6121869F0F00EA14E7 /* UIView+Extension.swift in Sources */,
+				E7997A702186C2AE00EA14E7 /* Alerts.swift in Sources */,
 				E7997A4B2186959B00EA14E7 /* ViewController.swift in Sources */,
 				E7997A492186959B00EA14E7 /* AppDelegate.swift in Sources */,
 				E7997A6E2186C07500EA14E7 /* GameState+Combinations.swift in Sources */,
