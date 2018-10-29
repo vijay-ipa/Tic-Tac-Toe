@@ -15,16 +15,37 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-        if (activeplayer == 1)
+    
+        let activePosition = sender.tag - 1
+        
+        if gameState[activePosition] == 0
         {
-            sender.setImage(UIImage(named: "Cross-01.png"), for: UIControl.State())
-            activeplayer = 2
+            gameState[activePosition] = activeplayer
+            
+            if (activeplayer == 1)
+            {
+                sender.setImage(UIImage(named: "Cross-01.png"), for: UIControl.State())
+                activeplayer = 2
+            }
+            else
+            {
+                sender.setImage(UIImage(named: "Nought.png"), for: UIControl.State())
+                activeplayer = 1
+            }
+            
+            for combination in winningcombinations
+            {
+                
+                if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]
+                {
+                    
+                }
+                
+            }
+            
         }
-        else
-        {
-            sender.setImage(UIImage(named: "Nought.png"), for: UIControl.State())
-            activeplayer = 1
-        }
+        
+       
         
     }
     
