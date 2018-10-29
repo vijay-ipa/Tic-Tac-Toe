@@ -13,6 +13,9 @@
 		E7997A502186959C00EA14E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7997A4F2186959C00EA14E7 /* Assets.xcassets */; };
 		E7997A532186959C00EA14E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7997A512186959C00EA14E7 /* LaunchScreen.storyboard */; };
 		E7997A6121869F0F00EA14E7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7997A6021869F0F00EA14E7 /* UIView+Extension.swift */; };
+		E7997A662186B01300EA14E7 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = E7997A652186B01300EA14E7 /* Board.png */; };
+		E7997A692186B67700EA14E7 /* Cross-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E7997A672186B67700EA14E7 /* Cross-01.png */; };
+		E7997A6A2186B67700EA14E7 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = E7997A682186B67700EA14E7 /* Nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E7997A522186959C00EA14E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7997A542186959C00EA14E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7997A6021869F0F00EA14E7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E7997A652186B01300EA14E7 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = ../../../Board.png; sourceTree = "<group>"; };
+		E7997A672186B67700EA14E7 /* Cross-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cross-01.png"; sourceTree = "<group>"; };
+		E7997A682186B67700EA14E7 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				E7997A482186959B00EA14E7 /* AppDelegate.swift */,
 				E7997A4A2186959B00EA14E7 /* ViewController.swift */,
 				E7997A4C2186959B00EA14E7 /* Main.storyboard */,
+				E7997A672186B67700EA14E7 /* Cross-01.png */,
+				E7997A682186B67700EA14E7 /* Nought.png */,
+				E7997A652186B01300EA14E7 /* Board.png */,
 				E7997A4F2186959C00EA14E7 /* Assets.xcassets */,
 				E7997A512186959C00EA14E7 /* LaunchScreen.storyboard */,
 				E7997A542186959C00EA14E7 /* Info.plist */,
@@ -125,9 +134,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7997A6A2186B67700EA14E7 /* Nought.png in Resources */,
+				E7997A662186B01300EA14E7 /* Board.png in Resources */,
 				E7997A532186959C00EA14E7 /* LaunchScreen.storyboard in Resources */,
 				E7997A502186959C00EA14E7 /* Assets.xcassets in Resources */,
 				E7997A4E2186959B00EA14E7 /* Main.storyboard in Resources */,
+				E7997A692186B67700EA14E7 /* Cross-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

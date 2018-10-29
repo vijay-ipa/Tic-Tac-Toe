@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,14 +14,125 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board.png" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-Oi-vHf">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="1qe-Tg-B7L"/>
+                                    <constraint firstAttribute="width" constant="375" id="feE-gd-4p9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1y-Ul-PW7">
+                                <rect key="frame" x="142.5" y="288.5" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="4ce-Ay-PzG"/>
+                                    <constraint firstAttribute="width" constant="90" id="8nm-RV-dzz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-Vu-okK">
+                                <rect key="frame" x="142.5" y="408" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="UC6-U2-ORo"/>
+                                    <constraint firstAttribute="height" constant="90" id="YKO-33-AdP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-4V-ejF">
+                                <rect key="frame" x="28" y="408" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Yc2-81-azV"/>
+                                    <constraint firstAttribute="width" constant="90" id="qiT-5L-ego"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5I-9V-eCD">
+                                <rect key="frame" x="260" y="288.5" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="NN8-Ov-z3M"/>
+                                    <constraint firstAttribute="height" constant="90" id="dj7-Ef-ikh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gi-tE-aJW">
+                                <rect key="frame" x="28" y="288.5" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Gdw-Rb-8sV"/>
+                                    <constraint firstAttribute="width" constant="90" id="euA-qR-8fT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdC-PQ-hlt">
+                                <rect key="frame" x="260" y="176" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="psW-8I-lGY"/>
+                                    <constraint firstAttribute="height" constant="90" id="zRK-HD-pDM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-Kh-t5K">
+                                <rect key="frame" x="142.5" y="176" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="A4b-vI-UJh"/>
+                                    <constraint firstAttribute="height" constant="90" id="TJ7-GG-BPw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBW-ui-NOc">
+                                <rect key="frame" x="28" y="176" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="7Pi-xF-FOe"/>
+                                    <constraint firstAttribute="width" constant="90" id="hqQ-V8-fnq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSs-Rl-hLI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAw-5E-EDL">
+                                <rect key="frame" x="260" y="408" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Uss-Md-SjN"/>
+                                    <constraint firstAttribute="height" constant="90" id="e3Z-Vw-uko"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Cross-01.png"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8aR-Vu-okK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0lr-x5-YHq"/>
+                            <constraint firstItem="3wt-Oi-vHf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0vb-cz-rjc"/>
+                            <constraint firstItem="dAw-5E-EDL" firstAttribute="top" secondItem="q5I-9V-eCD" secondAttribute="bottom" constant="29.5" id="2Ys-zk-RDz"/>
+                            <constraint firstItem="8aR-Vu-okK" firstAttribute="leading" secondItem="QAh-4V-ejF" secondAttribute="trailing" constant="24.5" id="4xb-WD-DTY"/>
+                            <constraint firstItem="dAw-5E-EDL" firstAttribute="leading" secondItem="8aR-Vu-okK" secondAttribute="trailing" constant="27.5" id="7gc-y0-Ulf"/>
+                            <constraint firstItem="8Gi-tE-aJW" firstAttribute="top" secondItem="pBW-ui-NOc" secondAttribute="bottom" constant="22.5" id="7sY-FH-1Ci"/>
+                            <constraint firstItem="o7g-Kh-t5K" firstAttribute="leading" secondItem="pBW-ui-NOc" secondAttribute="trailing" constant="24.5" id="CxQ-76-dAV"/>
+                            <constraint firstItem="QAh-4V-ejF" firstAttribute="top" secondItem="8Gi-tE-aJW" secondAttribute="bottom" constant="29.5" id="Gp0-0i-7sa"/>
+                            <constraint firstItem="3wt-Oi-vHf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kym-G1-u0g"/>
+                            <constraint firstItem="NdC-PQ-hlt" firstAttribute="leading" secondItem="o7g-Kh-t5K" secondAttribute="trailing" constant="27.5" id="RKW-kZ-Inx"/>
+                            <constraint firstItem="q5I-9V-eCD" firstAttribute="top" secondItem="NdC-PQ-hlt" secondAttribute="bottom" constant="22.5" id="XlQ-ac-26g"/>
+                            <constraint firstItem="l1y-Ul-PW7" firstAttribute="top" secondItem="o7g-Kh-t5K" secondAttribute="bottom" constant="22.5" id="ZAz-Pq-z0N"/>
+                            <constraint firstItem="l1y-Ul-PW7" firstAttribute="leading" secondItem="8Gi-tE-aJW" secondAttribute="trailing" constant="24.5" id="fZV-sy-q15"/>
+                            <constraint firstItem="8Gi-tE-aJW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i7y-pE-GJj"/>
+                            <constraint firstItem="8aR-Vu-okK" firstAttribute="top" secondItem="l1y-Ul-PW7" secondAttribute="bottom" constant="29.5" id="rEJ-Fb-kuC"/>
+                            <constraint firstItem="o7g-Kh-t5K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tDJ-gr-Jnw"/>
+                            <constraint firstItem="l1y-Ul-PW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u7T-f8-ANC"/>
+                            <constraint firstItem="q5I-9V-eCD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uq4-ly-Dgd"/>
+                            <constraint firstItem="q5I-9V-eCD" firstAttribute="leading" secondItem="l1y-Ul-PW7" secondAttribute="trailing" constant="27.5" id="wF1-GU-nRb"/>
+                            <constraint firstItem="l1y-Ul-PW7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zcd-J7-fIO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Board.png" width="1023" height="1027"/>
+        <image name="Cross-01.png" width="500" height="500"/>
+    </resources>
 </document>
