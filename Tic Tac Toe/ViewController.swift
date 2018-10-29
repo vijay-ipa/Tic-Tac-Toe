@@ -45,19 +45,22 @@ class ViewController: UIViewController {
                     if gameState[combination[0]] == 1
                     {
                         let alert1 = UIAlertController(title: "Kudos......!", message: "Player X has Won", preferredStyle: .alert)
-                        alert1.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        alert1.addAction(UIAlertAction(title: "Restart", style: .default, handler: { (_) in
+                            self.playAgain(sender)
+                        }))
+
                         present(alert1, animated: true)
                         
                     }
                     else
                     {
                         let alert2 = UIAlertController(title: "Kudos......!", message: "Player O has Won", preferredStyle: .alert)
-                        alert2.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        alert2.addAction(UIAlertAction(title: "Restart", style: .default, handler: { (_) in
+                            self.playAgain(sender)
+                        }))
                         present(alert2, animated: true)
                         
                     }
-                    
-                    playAgainButton.isHidden = false
                     
                 }
                 
@@ -75,20 +78,21 @@ class ViewController: UIViewController {
         }
         if activeGame == false
         {
-            let alert3 = UIAlertController(title: "It's a Draw", message: "There is no Winner", preferredStyle: .alert)
-            alert3.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            let alert3 = UIAlertController(title: "It's a Draw.....!", message: "There is no Winner", preferredStyle: .alert)
+            alert3.addAction(UIAlertAction(title: "Restart", style: .default, handler: { (_) in
+                self.playAgain(sender)
+            }))
+
             present(alert3, animated: true)
-            playAgainButton.isHidden = false
+
         }
     }
     
-    @IBOutlet weak var playAgainButton: UIButton!
     @IBAction func playAgain(_ sender: AnyObject)
     {
         gameState = [0,0,0,0,0,0,0,0,0]
         activeGame = true
         activeplayer = 1
-        playAgainButton.isHidden = true
         
         for i in 1...9
         {
@@ -105,7 +109,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.setGradientBgColor(colorOne: UIColor.green, colorTwo: UIColor.green, colorThree: UIColor.yellow, colorFour: UIColor.yellow)
     
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 

@@ -114,21 +114,6 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qE8-6o-dRe"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-mf-1Ho">
-                                <rect key="frame" x="112.5" y="551" width="150" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="1f0-gf-nJ4"/>
-                                    <constraint firstAttribute="height" constant="50" id="9OH-FJ-X2R"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Restart">
-                                    <color key="titleColor" red="0.62281560244625567" green="0.96365159749984741" blue="0.0016423077322542667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xV5-nE-aZQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -141,13 +126,11 @@
                             <constraint firstItem="o7g-Kh-t5K" firstAttribute="leading" secondItem="pBW-ui-NOc" secondAttribute="trailing" constant="24.5" id="CxQ-76-dAV"/>
                             <constraint firstItem="QAh-4V-ejF" firstAttribute="top" secondItem="8Gi-tE-aJW" secondAttribute="bottom" constant="29.5" id="Gp0-0i-7sa"/>
                             <constraint firstItem="3wt-Oi-vHf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kym-G1-u0g"/>
-                            <constraint firstItem="1gw-mf-1Ho" firstAttribute="top" secondItem="3wt-Oi-vHf" secondAttribute="bottom" constant="30" id="Lyc-Fq-Tlc"/>
                             <constraint firstItem="NdC-PQ-hlt" firstAttribute="leading" secondItem="o7g-Kh-t5K" secondAttribute="trailing" constant="27.5" id="RKW-kZ-Inx"/>
                             <constraint firstItem="q5I-9V-eCD" firstAttribute="top" secondItem="NdC-PQ-hlt" secondAttribute="bottom" constant="22.5" id="XlQ-ac-26g"/>
                             <constraint firstItem="l1y-Ul-PW7" firstAttribute="top" secondItem="o7g-Kh-t5K" secondAttribute="bottom" constant="22.5" id="ZAz-Pq-z0N"/>
                             <constraint firstItem="l1y-Ul-PW7" firstAttribute="leading" secondItem="8Gi-tE-aJW" secondAttribute="trailing" constant="24.5" id="fZV-sy-q15"/>
                             <constraint firstItem="8Gi-tE-aJW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i7y-pE-GJj"/>
-                            <constraint firstItem="1gw-mf-1Ho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFQ-x1-Ahl"/>
                             <constraint firstItem="8aR-Vu-okK" firstAttribute="top" secondItem="l1y-Ul-PW7" secondAttribute="bottom" constant="29.5" id="rEJ-Fb-kuC"/>
                             <constraint firstItem="o7g-Kh-t5K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tDJ-gr-Jnw"/>
                             <constraint firstItem="l1y-Ul-PW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u7T-f8-ANC"/>
@@ -157,9 +140,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="playAgainButton" destination="1gw-mf-1Ho" id="mJz-2U-SGl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
